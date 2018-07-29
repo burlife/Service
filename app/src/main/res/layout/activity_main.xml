@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zmm.yuekao.MainActivity">
+ <include layout="@layout/tou_one_layout"></include>
+<include layout="@layout/tou_two_layout"></include>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
+    >
+ <com.example.library.AutoFlowLayout
+     android:id="@+id/auto_flow"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"></com.example.library.AutoFlowLayout>
+<RelativeLayout
+    android:id="@+id/find"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="60dp"
+    >
+
+
+ <TextView
+     android:id="@+id/textView2"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentStart="true"
+     android:layout_alignParentTop="true"
+     android:text="搜索发现"
+     android:textSize="20sp"
+     android:textColor="#000"
+     />
+
+ <TextView
+     android:id="@+id/textView3"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentStart="true"
+     android:layout_centerVertical="true"
+     android:text="娃哈哈"
+     android:textSize="20sp"
+     android:background="@drawable/shape01"
+     android:textStyle="bold"
+     />
+
+ <TextView
+     android:id="@+id/textView4"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignBottom="@+id/textView3"
+     android:layout_toEndOf="@+id/textView2"
+     android:layout_toRightOf="@+id/textView2"
+     android:text="果冻"
+     android:textSize="20sp"
+     android:background="@drawable/shape01"
+     />
+</RelativeLayout>
+ <RelativeLayout
+     android:layout_below="@+id/find"
+     android:layout_width="match_parent"
+     android:layout_height="150dp"
+     android:layout_marginTop="5dp"
+     >
+
+
+  <TextView
+      android:id="@+id/textView5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:text="常用分类"
+      android:textSize="20sp"
+      android:textColor="#000"
+      />
+
+  <TextView
+      android:id="@+id/textView6"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_below="@+id/textView5"
+      android:layout_marginTop="19dp"
+      android:text="儿时"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      android:background="@drawable/shpe02"
+      />
+
+  <TextView
+      android:id="@+id/textView7"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/textView6"
+      android:layout_toEndOf="@+id/textView5"
+      android:layout_toRightOf="@+id/textView5"
+      android:text="八十年代"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      android:background="@drawable/shpe02"
+      />
+ </RelativeLayout>
+</RelativeLayout>
+
+</RelativeLayout>

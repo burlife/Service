@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="460dp"
+    android:layout_height="40dp"
+     android:background="@drawable/shape"
+    android:id="@+id/relativeLayout">
+
+    <ImageView
+        android:id="@+id/sou"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        app:srcCompat="@drawable/sou" />
+
+    <EditText
+        android:id="@+id/ed_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sou"
+        android:layout_toEndOf="@+id/sou"
+        android:layout_toRightOf="@+id/sou"
+        android:background="@null"
+        android:ems="10"
+        android:hint="在千万海外商品中搜索"
+        android:inputType="textPersonName" />
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/t_quxiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/relativeLayout"
+        android:layout_toRightOf="@+id/relativeLayout"
+        android:text="取消"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+</RelativeLayout>
